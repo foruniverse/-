@@ -1,0 +1,14 @@
+#include<stdio.h>
+main()
+{
+ //ax+by=m
+ //cx+dy=n
+ //x=(md-bn)/(ad-bc)
+ //y=(mc-an)/(bc-ad)
+ double a,b,c,d,m,n;
+ printf("输入abcdmn的值\n");
+ scanf("%if%if%if%if%if%if",&a,&b,&c，&d,&m,&n);
+ x=(m*d-b*n)/(a*d-b*c);
+ y=(m*c-a*n)/(b*c-a*d);
+ printf("x值为%if,y值为%if\n",x,y);
+}
