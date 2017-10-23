@@ -1,0 +1,20 @@
+#include "stdafx.h"
+
+
+#include <stdio.h>
+
+int main(void)
+{
+	int m; 
+	double input; 
+
+	puts("请您在下方输入一个数：");
+	scanf("%lf", &input);
+	puts("请输入,你想精确到小数点后的位数");
+	scanf("%d", &m);
+
+	puts("您的结果为");
+	printf("%.*lf\n", m, input);
+
+	return 0;
+}
