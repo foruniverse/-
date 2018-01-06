@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int min=0,n,i=0;
+	int str[1000],sta[1000],stb[1000];
+	scanf("%d",&n);
+	for(int i=0;i<n;++i)
+	{
+	scanf("%d",&str[i]);
+	for(int b=0;b<str[i];++b)
+	{
+	scanf("%d",&sta[b]);
+	}
+	for(int a=0;a<str[i];++a)
+    {
+		if(sta[a]<sta[a-1])
+		{
+		min=sta[a-1];
+		sta[a-1]=sta[a];
+		sta[a]=min;}
+	}
+	stb[i]=sta[1];
+    }
+    for(int c=0;c<n;++c)
+    printf("%d\n",stb[c]);
+	return 0;
+}
