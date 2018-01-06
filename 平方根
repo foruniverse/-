@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n,i=0,str[1000];
+	scanf("%d",&n);
+	for(int i=0;i<n;++i)
+	{
+	scanf("%d",&str[i]);
+	
+    }
+    double a;
+    for(i;i<n;++i){
+    	if(str[i]>=0)
+    	{
+		a=sqrt(str[i]);
+    	printf("%.2f\n",a);}
+    	else printf("ERROR\n");
+	}
+	return 0;
+}
