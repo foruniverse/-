@@ -1,0 +1,23 @@
+#include<stdio.h>
+#define size 81
+void strcopy(char[],char[]) ;
+ void strcopy(char string2[],char string1[])
+ {
+ 	int i=0;
+    while(string1[i]!='\0')
+ 	{
+       	string2[i]=string1[i];
+       	i++;
+	 }
+	 string2[i]='\0';
+ }
+int main()
+{
+	char message[size];
+	char newmessage[size];
+	printf("输入字符串：");
+	gets(message);
+	strcopy(newmessage,message);
+	puts(newmessage);
+	return 0; 
+ } 
