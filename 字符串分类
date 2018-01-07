@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+char str[1000];
+char math[1000];
+char word[1000];
+char others[10000];
+int i=0;
+int m,b,c;
+m=b=c=0; 
+gets(str);
+for(i=0;str[i];++i)
+{
+	if(str[i]>='0'&&str[i]<='9')
+    	math[m++]=str[i];
+    else if((str[i]>='a' &&str[i]<='z')||(str[i]>='A'&&str[i]<='Z'))
+        word[b++]=str[i];
+    else others[c++]=str[i];
+}
+puts(math);
+puts(word);
+puts(others);
+return 0;
+}
